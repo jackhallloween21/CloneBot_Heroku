@@ -1,4 +1,4 @@
-version: "3.9"
+version: "4"
 
 services:
   clonebot:
@@ -9,6 +9,6 @@ services:
       - user_ids=${user_ids}
       - group_ids=${group_ids}
        - PORT=${PORT}
-    ports:
-      - ${PORT}:${PORT}
+   ports:
+      - "80:80"
     restart: unless-stopped
